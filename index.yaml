@@ -1,0 +1,33 @@
+apiVersion: v1
+entries:
+  alluxio-operator:
+  - apiVersion: v2
+    created: "2026-11-18T04:41:22.342187377Z"
+    dependencies:
+    - name: common
+      repository: file://../common
+      version: 3.8.0
+    - condition: fdb-operator.enabled
+      name: fdb-operator
+      repository: file://../fdb-operator
+      version: 0.2.0
+    - condition: kube-prometheus-stack.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 72.6.2
+    description: Empower AI builders with a fast, scalable, and reliable compute &
+      data infrastructure.
+    digest: bbffe0e8b8f86f152ab26454b9383cb0427f590909677a7b2e6b4535476717c4
+    home: https://www.alluxio.io/
+    maintainers:
+    - email: jiacheng@alluxio.com
+      name: Jiacheng Liu
+    - email: jiasen.sun@alluxio.com
+      name: Jiasen Sun
+    - email: kai.zhang@alluxio.com
+      name: Kai Zhang
+    name: alluxio-operator
+    urls:
+    - https://dodiadodia.github.io/alluxio-operator-helm-test/alluxio-operator-3.8.0.tgz
+    version: 3.8.0
+generated: "2026-11-18T04:41:22.294396105Z"
